@@ -1,7 +1,6 @@
 *{
     padding: 0%;
     margin: 0%;
-    text-align: center
 }
 body{
     height: 100vh;
@@ -27,6 +26,18 @@ div{
 
     /* scale
     transform: scale(2); */
-    
+
+    /* translate
+    transform: translateY(-25px , 20px); */
+
+    position: relative;
+}
+div::after{
+    content: 'After';
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
 
 }
